@@ -178,3 +178,31 @@ body {
 .total-num {
   font-weight: 400;
 }
+
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .titles {
+    font-size: 1.4rem;
+  }
+
+  .action-title {
+    margin-right: 5rem;
+  }
+
+  .amount {
+    margin-right: 0rem;
+  }
+
+  .btns-box {
+    gap: 0.5rem;
+    margin-right: 2rem;
+  }
+}
