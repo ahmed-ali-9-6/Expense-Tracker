@@ -1,0 +1,180 @@
+/****************
+*****CSS RESET***
+*****************/
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  background-color: #f9f9f9;
+  border: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+/* ************** */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+.main-heading {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input {
+  border: 3px solid #f1f1f1;
+  border-radius: 0.5rem;
+  height: 4rem;
+  font-size: 1.8rem;
+}
+
+.input::placeholder {
+  color: #ccc;
+  padding-left: 1rem;
+}
+
+.add-btn {
+  color: #fff;
+  background-color: #03af03;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  transition: all 0.4s;
+}
+
+.add-btn:hover {
+  background-color: #03c503;
+}
+
+.expense-box {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 0 1rem 0.2rem #ddd;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #eee;
+  height: 4rem;
+}
+
+.name-title {
+  margin-left: 2rem;
+}
+
+.action-title {
+  margin-right: 15rem;
+}
+
+.expense-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  border-top: 4px solid #f1f1f1;
+  font-size: 1.8rem;
+  height: 4rem;
+}
+
+.name {
+  margin-left: 2rem;
+}
+
+.amount {
+  justify-self: center;
+  margin-right: 7rem;
+}
+
+.btns-box {
+  display: flex;
+  justify-self: end;
+  gap: 2rem;
+  margin-right: 13rem;
+}
+
+.edit-btn {
+  color: #03af03;
+  transition: all 0.4s;
+}
+
+.edit-btn:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.delete-btn {
+  color: red;
+  transition: all 0.4s;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #eee;
+  height: 4rem;
+}
+
+.total {
+  margin-right: 3rem;
+}
+
+.total-num {
+  font-weight: 400;
+}

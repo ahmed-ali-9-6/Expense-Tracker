@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <h1 class="main-heading">Expense Tracker</h1>
+        <form class="form">
+          <input
+            class="input-name input"
+            type="text"
+            placeholder="Expense Name"
+            required
+          />
+          <input
+            class="input-amount input"
+            type="number"
+            placeholder="Amount"
+            required
+          />
+          <button class="add-btn" type="submit">Add Expense</button>
+        </form>
+        <div class="expense-box">
+          <div class="titles">
+            <span class="name-title">Expense Name</span>
+            <span class="amount-title">Amount</span>
+            <span class="action-title">Action</span>
+          </div>
+          <ul class="expense-list">
+            <li class="expense-item">
+              <span class="name">Dinner</span>
+              <span class="amount">$50</span>
+              <div class="btns-box">
+                <button class="edit-btn" type="submit">Edit</button>
+                <button class="delete-btn" type="submit">Delete</button>
+              </div>
+            </li>
+          </ul>
+          <div class="footer">
+            <p class="total">Total: $<span class="total-num">90</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
